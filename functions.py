@@ -30,5 +30,17 @@ def num_within(num, min, max):
         return False
 print(num_within(4, 1, 5))
 
-
+# pascal function
+# majority of code block courtesy of https://www.tutorialspoint.com/program-to-generate-pascal-s-triangle-in-python
 print("pascal:")
+def pascal(n):
+   for i in range(n+1):
+      for x in range(n-i):
+         print(' ', end='')
+
+      y = 1
+      for x in range(1, i+1):
+         print(y, ' ', sep='', end='')
+         y = y * (i - x) // x
+      print()
+pascal(5)
