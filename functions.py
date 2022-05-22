@@ -15,7 +15,11 @@ def mult_list(numbers):
 numbers = [3, 10, 5]
 print(mult_list(numbers))
 
+# rev_string function
 print("rev_string:")
+def rev_string(string):
+    return string[::-1]
+print(rev_string("some string"))
 
 print("num_within:")
 
