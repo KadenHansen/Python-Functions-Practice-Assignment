@@ -21,6 +21,14 @@ def rev_string(string):
     return string[::-1]
 print(rev_string("some string"))
 
+# num_within function
 print("num_within:")
+def num_within(num, min, max):
+    if num > min and num < max:
+        return True
+    else:
+        return False
+print(num_within(4, 1, 5))
+
 
 print("pascal:")
